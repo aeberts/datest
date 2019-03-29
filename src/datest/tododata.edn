@@ -1,0 +1,25 @@
+[
+ {:db/id #db/id[:db.part/user -1]
+  :todo/title "Get some milk"
+  :todo/note "Best milk is at Whole Foods"
+  :todo/status :todo.status/not_started }
+
+ {:db/id #db/id[:db.part/user -3]
+  :todo/title "Buy Cheese"
+  :todo/note "Granville Island cheese shop"
+  :todo/status :todo.status/not_started}
+
+ {:db/id #db/id[:db.part/user -4]
+  :todo/title "Buy Bread"
+  :todo/note "Beaucoup Bakery"
+  :todo/status :todo.status/not_started}
+
+ {:db/id #db/id[:db.part/user -2]
+  :list/name "Groceries"
+  :list/todos [
+               #db/id[:db.part/user -1]
+               #db/id[:db.part/user -3]
+               #db/id[:db.part/user -4]
+               ]
+  }
+ ]
